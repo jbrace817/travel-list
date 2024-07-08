@@ -65,12 +65,31 @@ function Form() {
   );
 }
 function PackingList() {
-  return <div className="list">LIST</div>;
+  return (
+    <div className="list">
+      <ul>
+        {initialItems.map((item) => (
+          <Item key={item.id} item={item} />
+        ))}
+      </ul>
+    </div>
+  );
 }
 function Stats() {
   return (
     <footer className="stats">
       <em> 💼 You have X items on your list, and you already packed X (x%) </em>
     </footer>
+  );
+}
+
+function Item({ item }) {
+  return (
+    <li>
+      <span style={item.packed ? { textDecoration: 'line-through' } : {}}>
+        {item.quantity} {item.description}
+      </span>
+      <button>❌</button>
+    </li>
   );
 }
