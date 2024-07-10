@@ -9,7 +9,7 @@
     <h1 style="font-size: 6rem">🌴</h1>
   </a>
 
-<h3 align="center">Travel Check List</h3>
+<h3 align="center">Travel Checklist</h3>
 
   <p align="center">
     Dont forget what you need for your trip!
